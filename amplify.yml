@@ -9,6 +9,9 @@ frontend:
   phases:
     build:
       commands:
+        - nvm install 18.19
+        - nvm use 18.19
+        - npm install
         - npm install -g @angular/cli
         - ng version
         - ng build --configuration=production
